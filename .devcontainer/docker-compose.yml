@@ -1,0 +1,21 @@
+---
+services:
+  dev:
+    build:
+      args:
+        USERNAME: tsc-nx
+        USER_UID: 1000
+        USER_GID: 1000
+      context: .
+      dockerfile: ./ubuntu.dockerfile
+    container_name: tsc-nx
+    # Overrides default command so things don't shut down after the process ends.
+    # This is suggested by the example template provided in the VSCode
+    #   devcontainers GitHub repository here:
+    # https://github.com/devcontainers/templates/blob/main/src/docker-existing-docker-compose/.devcontainer/docker-compose.yml
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    stdin_open: true
+    tty: true
+    volumes:
+      - ..:/workspaces/tsc-nx:rw
+...
