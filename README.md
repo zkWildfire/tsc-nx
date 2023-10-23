@@ -78,3 +78,11 @@ nx g @nx/js:lib --name bar --bundler tsc --unitTestRunner jest
 
 Once those commands were run, the only changes I made were to source files. This
 was sufficient to make the bug reproducible with `nx build foo`.
+
+## Version Info
+| Software | Version |
+|:--------:|:-------:|
+| tsc | v5.1.6 |
+| node | v20.8.0 |
+| npm, npx | v10.1.0 |
+| nx | v17.0.1 |
