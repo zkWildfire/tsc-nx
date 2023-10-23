@@ -82,7 +82,7 @@ was sufficient to make the bug reproducible with `nx build foo`.
 ## Version Info
 | Software | Version |
 |:--------:|:-------:|
-| tsc | v5.1.6 |
-| node | v20.8.0 |
-| npm, npx | v10.1.0 |
-| nx | v17.0.1 |
+| tsc | 5.1.6, 5.3.0-dev.20231022 |
+| node | 20.8.0 |
+| npm, npx | 10.1.0 |
+| nx | 17.0.1 |
