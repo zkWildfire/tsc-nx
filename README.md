@@ -57,4 +57,10 @@ relevant information:
 # cwd: <repo_root>
 npx create-nx-workspace@latest --name working --preset ts --workspaceType integrated --nxCloud false
 npx create-nx-workspace@latest --name buggy --preset ts --workspaceType integrated --nxCloud false
+
+# Create the two libraries in each workspace
+# These commands were run twice, once in `<repo_root>/working` and again in
+#   `<repo_root>/buggy`.
+nx g @nx/js:lib --name foo --bundler tsc --unitTestRunner jest
+nx g @nx/js:lib --name bar --bundler tsc --unitTestRunner jest
 ```

@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@buggy/bar": ["bar/src/index.ts"],
+      "@buggy/foo": ["foo/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
