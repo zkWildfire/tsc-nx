@@ -13,16 +13,8 @@
 				"EditorConfig.EditorConfig",
 				"esbenp.prettier-vscode",
 				"firsttris.vscode-jest-runner",
-				"FordLabs.copyrighter",
-				"GitHub.copilot-chat",
-				"GitHub.copilot",
-				"github.vscode-github-actions",
-				"jebbs.plantuml",
 				"ms-azuretools.vscode-docker",
-				"ms-python.python",
 				"nrwl.angular-console",
-				"ryanluker.vscode-coverage-gutters",
-				"streetsidesoftware.code-spell-checker",
 				"timonwong.shellcheck",
 				"yzhang.markdown-all-in-one"
 			]
