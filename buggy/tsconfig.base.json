@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@buggy/bar": ["bar/src/index.ts"],
+      "@buggy/bar/lib": ["bar/src/lib/index.ts"],
       "@buggy/foo": ["foo/src/index.ts"]
     }
   },
