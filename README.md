@@ -50,10 +50,10 @@ is that the function is exported from `@working/bar` via the `bar/src/index.ts`
 file, and `buggy` exports the type from `@buggy/bar/lib` via
 `bar/src/lib/index.ts`.
 
-To reproduce this bug, `cd` into `buggy` and run `nx build foo`. This should
-result in an error message like the one provided above. You can also verify
-that the issue does not arise in the `working` workspace by running the same
-command in that workspace.
+To reproduce this bug, `cd` into `buggy`, run `npm i`, then run `nx build foo`.
+This should result in an error message like the one provided above. You can also
+verify that the issue does not arise in the `working` workspace by running the
+same commands in that workspace.
 
 I'm not quite clear on whether this issue is related to how nx sets up imports
 between libraries as I'm relatively new to both nx and TypeScript. However,
@@ -82,7 +82,10 @@ was sufficient to make the bug reproducible with `nx build foo`.
 ## Version Info
 | Software | Version |
 |:--------:|:-------:|
-| tsc | 5.1.6, 5.3.0-dev.20231022 |
+| tsc | 5.1.6 |
 | node | 20.8.0 |
 | npm, npx | 10.1.0 |
 | nx | 17.0.1 |
+
+I also tried using `typescript@next`, but ran into dependency issues with the
+npm packages installed by default by nx's TypeScript library generator.
